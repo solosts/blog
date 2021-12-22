@@ -46,7 +46,7 @@ $(document).ready(function () {
       })
     } else {
       data.articleList.forEach(function (item) {
-        if (item.label == label) {
+        if (item.classify == label) {
           articleHtml +=
             `<li class="blogs_list">` +
             `<a href="${item.url}">` +
