@@ -74,11 +74,14 @@
         </div>
         <div class="blogs_info_page">
             <article>
-                <h1>微信二次分享没有图片内容</h1>
-                <div class="wz_info">时间：2021-12-21 17:02</div>
+                <h1>微信页面腾讯视频不能内嵌</h1>
+                <div class="wz_info">时间：2021-12-22 16:24</div>
                 <div class="content">
-                    <p>使用框架自带的方法获取路径调用微信分享，分享成功后路径后面会增加参数，路径变化了，而框架自带的方法获取的路径不会带有这个参数，所以二次分享的实际路径和调用接口的参数不一致，导致失败了。</p>
-                    <p>解决方法是将获取路径方法改成使用window.href实时获取现在的地址提交获取新的签名。</p>
+                    <p>因为腾讯视频内嵌页面的链接域名是“https://v.qq.com”，而在微信里面这个域名是不能直接用的。</p>
+                    <p><img src="/images/2021/12/22/1-1.png" alt=""></p>
+                    <p>除了iframe其他的内嵌方式也没有用，也就是说：只要是这个域名就不能在微信打开的页面上使用。</p>
+                    <p>解决方法：</p>
+                    <p><img src="/images/2021/12/22/1-2.png" alt=""></p>
                 </div>
                 <div class="tags">
                     <a href="/pages/classify.html?label=微信">微信</a>

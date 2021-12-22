@@ -6,12 +6,13 @@
 
   <title>Solosts个人博客 - 记录学习笔记的个人博客网站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link href="./css/base.css" rel="stylesheet">
-  <link href="./css/m.css" rel="stylesheet">
-  <script src="./js/hm.js"></script>
-  <script src="./js/jquery-3.6.0.min.js"></script>
-  <script src="./js/comm.js"></script>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link href="/css/base.css" rel="stylesheet">
+  <link href="/css/m.css" rel="stylesheet">
+  <script src="/js/hm.js"></script>
+  <script src="/js/jquery-3.6.0.min.js"></script>
+  <script src="/js/comm.js"></script>
+  <script src="/js/index.js"></script>
   <style id="tsbrowser_video_independent_player_style" type="text/css">
     [tsbrowser_force_max_size] {
       width: 100% !important;
@@ -55,43 +56,39 @@
 <body>
   <header>
     <div class="box">
-      <div class="logo"><a href="https://solosts.github.io/blog">Solosts个人博客</a></div>
+      <div class="logo"><a href="/">Solosts个人博客</a></div>
       <nav>
         <ul id="starlist">
-          <li><a href="https://solosts.github.io/blog">网站首页</a></li>
-          <li><a href="https://solosts.github.io/blog/pages/problem.html">问题记录</a></li>
+          <li><a href="/">网站首页</a></li>
+          <li><a href="/pages/problem.html">问题记录</a></li>
         </ul>
+        <h2 id="mnavh"><span class="navicon"></span></h2>
+        <div class="is-search"> <i></i> </div>
+        <div class="search-page">
+          <div class="search_box">
+            <div class="search">
+              <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字词" style="color: rgb(153, 153, 153);"
+                onfocus="if(value=='请输入关键字词'){this.style.color='#000';value=''}"
+                onblur="if(value==''){this.style.color='#999';value='请输入关键字词'}" type="text">
+              <input name="Submit" id="submit" class="input_submit" value="搜索" type="submit">
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
   <div class="box">
     <div class="blogs">
-      <ul>
-        <li class="blogs_list">
-          <a href="./pages/2021/12/21/one.html">
-            <em>微信分享</em>
-            <i><img src="./images/2021/12/21/oneTitle.jpg" alt="微信二次分享没有图片内容"></i>
-            <h2>微信二次分享没有图片内容</h2>
-            <p>微信二次分享没有图片内容</p>
-            <div class="blogs_base"><span class="blogs_time">2021-12-21</span></div>
-          </a>
-        </li>
-      </ul>
+      <ul id="articleList"></ul>
     </div>
     <aside class="rbox">
       <div class="tagsclous">
         <h3 class="h_title">标签云</h3>
-        <ul>
-          <a href="" target="_blank">微信</a>
-        </ul>
+        <ul id="classifyList"></ul>
       </div>
       <div class="isgood_news">
         <h3 class="h_title">文章列表</h3>
-        <ul>
-          <li>
-            <a href="./pages/2021/12/21/one.html" title="微信二次分享没有图片内容" target="_blank">微信二次分享没有图片内容</a>
-          </li>
-        </ul>
+        <ul id="articleListRight"></ul>
       </div>
     </aside>
   </div>

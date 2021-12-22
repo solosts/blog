@@ -12,7 +12,7 @@
     <script src="/js/hm.js"></script>
     <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="/js/comm.js"></script>
-    <script src="/js/content.js"></script>
+    <script src="/js/classify.js"></script>
     <style id="tsbrowser_video_independent_player_style" type="text/css">
         [tsbrowser_force_max_size] {
             width: 100% !important;
@@ -62,6 +62,19 @@
                     <li><a href="/">网站首页</a></li>
                     <li><a href="/pages/problem.html">问题记录</a></li>
                 </ul>
+                <h2 id="mnavh"><span class="navicon"></span></h2>
+                <div class="is-search"> <i></i> </div>
+                <div class="search-page">
+                    <div class="search_box">
+                        <div class="search">
+                            <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字词"
+                                style="color: rgb(153, 153, 153);"
+                                onfocus="if(value=='请输入关键字词'){this.style.color='#000';value=''}"
+                                onblur="if(value==''){this.style.color='#999';value='请输入关键字词'}" type="text">
+                            <input name="Submit" id="submit" class="input_submit" value="搜索" type="submit">
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -70,20 +83,10 @@
             您当前的位置：
             <a href="/">首页</a>
             &nbsp;>&nbsp;
-            <a id="weizhi" href="/pages/problem.html">问题记录</a>
+            <a id="weizhi" href="/pages/problem.html"></a>
         </div>
-        <div class="blogs_info_page">
-            <article>
-                <h1>微信二次分享没有图片内容</h1>
-                <div class="wz_info">时间：2021-12-21 17:02</div>
-                <div class="content">
-                    <p>使用框架自带的方法获取路径调用微信分享，分享成功后路径后面会增加参数，路径变化了，而框架自带的方法获取的路径不会带有这个参数，所以二次分享的实际路径和调用接口的参数不一致，导致失败了。</p>
-                    <p>解决方法是将获取路径方法改成使用window.href实时获取现在的地址提交获取新的签名。</p>
-                </div>
-                <div class="tags">
-                    <a href="/pages/classify.html?label=微信">微信</a>
-                </div>
-            </article>
+        <div class="blogs">
+            <ul id="articleList"></ul>
         </div>
         <aside class="rbox">
             <div class="tagsclous">
@@ -96,7 +99,6 @@
             </div>
         </aside>
     </div>
-
     <a href="javaScript:;" title="返回顶部" class="icon-top"></a>
 </body>
 
