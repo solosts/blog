@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $.getJSON("/json/list.json", function (data) {
+  $.getJSON("/blog/json/list.json", function (data) {
     // console.log(data)
     getArticle(data)
     getClassify(data)
@@ -17,7 +17,7 @@ $(document).ready(function () {
   function getClassify(data) {
     let classifyHtml = ""
     data.classifyList.forEach(function (item) {
-      classifyHtml += `<a href="/pages/classify.html?label=${item}">${item}</a>`
+      classifyHtml += `<a href="/blog/pages/classify.html?label=${item}">${item}</a>`
     })
     $("#classifyList").html(classifyHtml)
   }

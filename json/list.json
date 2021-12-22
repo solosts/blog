@@ -4,8 +4,8 @@
     {
       "id": 1,
       "title": "微信二次分享没有图片内容",
-      "thumb": "/images/2021/12/21/oneTitle.jpg",
-      "url": "/pages/2021/12/21/one.html",
+      "thumb": "/blog/images/2021/12/21/oneTitle.jpg",
+      "url": "/blog/pages/2021/12/21/one.html",
       "time": "2021-12-21 17:02",
       "label": "微信分享",
       "classify": "微信",
@@ -14,8 +14,8 @@
     {
       "id": 2,
       "title": "微信页面腾讯视频不能内嵌",
-      "thumb": "/images/2021/12/22/1.png",
-      "url": "/pages/2021/12/22/1.html",
+      "thumb": "/blog/images/2021/12/22/1.png",
+      "url": "/blog/pages/2021/12/22/1.html",
       "time": "2021-12-22 16:24",
       "label": "腾讯视频内嵌",
       "classify": "微信",
@@ -24,8 +24,8 @@
     {
       "id": 3,
       "title": "网页高度问题",
-      "thumb": "/images/2021/12/22/2.png",
-      "url": "/pages/2021/12/22/2.html",
+      "thumb": "/blog/images/2021/12/22/2.png",
+      "url": "/blog/pages/2021/12/22/2.html",
       "time": "2021-12-22 16:39",
       "label": "HTML",
       "classify": "HTML",
@@ -34,8 +34,8 @@
     {
       "id": 4,
       "title": "TypeScript编译报错",
-      "thumb": "/images/2021/12/22/3.png",
-      "url": "/pages/2021/12/22/3.html",
+      "thumb": "/blog/images/2021/12/22/3.png",
+      "url": "/blog/pages/2021/12/22/3.html",
       "time": "2021-12-22 16:55",
       "label": "TypeScript",
       "classify": "TypeScript",

@@ -3,13 +3,13 @@ $(document).ready(function () {
   $("#submit").on("click", function () {
     let val = $("#keyboard").val()
     // console.log(val)
-    $.getJSON("/json/problemList.json", function (data) {
+    $.getJSON("/blog/json/problemList.json", function (data) {
       // console.log(data)
       getArticle(data, val)
     })
   })
 
-  $.getJSON("/json/problemList.json", function (data) {
+  $.getJSON("/blog/json/problemList.json", function (data) {
     // console.log(data)
     getArticle(data)
     getClassify(data)
@@ -62,7 +62,7 @@ $(document).ready(function () {
   function getClassify(data) {
     let classifyHtml = ""
     data.classifyList.forEach(function (item) {
-      classifyHtml += `<a href="/pages/classify.html?label=${item}">${item}</a>`
+      classifyHtml += `<a href="/blog/pages/classify.html?label=${item}">${item}</a>`
     })
     $("#classifyList").html(classifyHtml)
   }

@@ -3,7 +3,7 @@ $(document).ready(function () {
   $("#submit").on("click", function () {
     let val = $("#keyboard").val()
     // console.log(val)
-    $.getJSON("/json/list.json", function (data) {
+    $.getJSON("/blog/json/list.json", function (data) {
       // console.log(data)
       getArticle(data, val)
     })
@@ -13,7 +13,7 @@ $(document).ready(function () {
   if (window.location.search && window.location.search.indexOf("label") >= 0) {
     label = decodeURIComponent(window.location.search.substring(7))
     $("#weizhi").text(label)
-    $("#weizhi").attr("href", `/pages/classify.html?label=${label}`)
+    $("#weizhi").attr("href", `/blog/pages/classify.html?label=${label}`)
   }
 
   $.getJSON("/json/list.json", function (data) {
@@ -71,7 +71,7 @@ $(document).ready(function () {
   function getClassify(data) {
     let classifyHtml = ""
     data.classifyList.forEach(function (item) {
-      classifyHtml += `<a href="/pages/classify.html?label=${item}">${item}</a>`
+      classifyHtml += `<a href="/blog/pages/classify.html?label=${item}">${item}</a>`
     })
     $("#classifyList").html(classifyHtml)
   }
