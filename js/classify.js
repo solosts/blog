@@ -16,7 +16,7 @@ $(document).ready(function () {
     $("#weizhi").attr("href", `/blog/pages/classify.html?label=${label}`)
   }
 
-  $.getJSON("/json/list.json", function (data) {
+  $.getJSON("/blog/json/list.json", function (data) {
     // console.log(data)
     getArticle(data)
     getClassify(data)
